@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 project(libuvc
   VERSION 0.0.6
-  LANGUAGES C
 )
 
 # Additional search scripts path for libusb-1.0, libjpeg, OpenCV
