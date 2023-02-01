@@ -163,11 +163,8 @@ if(BUILD_TEST)
   )
 
   add_executable(uvc_test src/test.c)
-  target_link_libraries(uvc_test
-    PRIVATE
-      LibUVC::UVC
-      opencv_core
-      opencv_highgui
+  target_compile_options(uvc_test
+    PRIVATE -std=c++11 -x c++
   )
 endif()
 
